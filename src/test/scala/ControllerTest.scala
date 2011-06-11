@@ -11,7 +11,7 @@ class ControllerTest extends Suite with MockFactory {
  
   def testDrawLine() {
     inSequence {
-      mockTurtle.expects.getPosition.returning(0.0, 0.0)
+      mockTurtle.expects.getPosition.returning((0.0, 0.0))
       mockTurtle.expects.getAngle.returning(0.0)
       mockTurtle.expects.penUp
       mockTurtle.expects.turn(~(Pi / 4))
